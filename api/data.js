@@ -167,8 +167,6 @@ const products = [
     'description': 'Just a blank t-shirt. Various colours available.',
     'category': CATEGORY_CLOTHING,
     'image': 'blue-t-shirt.jpg',
-    'green': 'green-t-shirt.jpg',
-    'purple': 'purple-t-shirt.jpg',
     'price': 300,
     'availability': 500,
     'highlight': true
