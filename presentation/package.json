@@ -2,6 +2,7 @@
   "name": "presentation",
   "version": "1.0.0",
   "scripts": {
+    "api": "node ../api/index.js",
     "01-component": "vue serve 01-single-file-component/index.vue",
     "02-style": "vue serve 02-style/index.vue",
     "03-data": "vue serve 03-data/index.vue",
