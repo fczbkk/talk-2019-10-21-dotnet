@@ -1,18 +1,18 @@
 <template>
   <div>
-    <product-item :productData="productData" />
+    <products-list :products="products" />
   </div>
 </template>
 
 <script>
   import {products} from '../data'
-  import ProductItem from './ProductItem'
+  import ProductsList from './ProductsList'
 
   export default {
-    components: { ProductItem },
+    components: { ProductsList },
     data () {
       return {
-        productData: products[0]
+        products
       }
     }
   }

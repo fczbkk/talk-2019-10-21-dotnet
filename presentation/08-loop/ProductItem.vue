@@ -1,9 +1,9 @@
 <template>
   <div class="productItem">
-    <h3>{{ productData.title }}</h3>
+    <h3>{{ product.title }}</h3>
     <div class="content">
-      <div><img :src="'http://localhost:3000/images/' + productData.image"></div>
-      <div class="price">{{ productData.price }},- Kč</div>
+      <div><img :src="'http://localhost:3000/images/' + product.image"></div>
+      <div class="price">{{ product.price }},- Kč</div>
       <quantity-editor v-model="quantity" />
     </div>
   </div>
@@ -15,7 +15,7 @@
   export default {
     components: { QuantityEditor },
     props: [
-      'productData'
+      'product'
     ],
     data () {
       return {

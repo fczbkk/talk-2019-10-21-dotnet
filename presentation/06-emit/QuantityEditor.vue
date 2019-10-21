@@ -15,6 +15,11 @@
       return {
         quantity: this.value
       }
+    },
+    watch: {
+      quantity (newValue) {
+        this.$emit('input', newValue)
+      }
     }
   }
 </script>

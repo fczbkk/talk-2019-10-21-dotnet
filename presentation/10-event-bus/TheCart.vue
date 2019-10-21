@@ -13,14 +13,22 @@
 </template>
 
 <script>
+  import { EventBus } from './event-bus'
+
   export default {
     data () {
       return {
-        itemsInCart: {
-          'swim-shorts': 1,
-          'tube-of-lip-balm': 5
-        }
+        itemsInCart: {}
       }
+    },
+    created () {
+      EventBus.$on('change-quantity', ({id, quantity}) => {
+        if (quantity > 0) {
+          this.$set(this.itemsInCart, id, quantity)
+        } else {
+          this.$delete(this.itemsInCart, id)
+        }
+      })
     }
   }
 </script>

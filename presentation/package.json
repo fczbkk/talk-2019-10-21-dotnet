@@ -5,7 +5,13 @@
     "01-component": "vue serve 01-single-file-component/index.vue",
     "02-style": "vue serve 02-style/index.vue",
     "03-data": "vue serve 03-data/index.vue",
-    "04-event": "vue serve 04-event/index.vue"
+    "04-event": "vue serve 04-event/index.vue",
+    "05-props": "vue serve 05-props/index.vue",
+    "06-emit": "vue serve 06-emit/index.vue",
+    "07-product": "vue serve 07-product/index.vue",
+    "08-loop": "vue serve 08-loop/index.vue",
+    "09-cart": "vue serve 09-cart/index.vue",
+    "10-event-bus": "vue serve 10-event-bus/index.vue"
   },
   "author": "Riki Fridrich <riki@fczbkk.com> (https://github.com/fczbkk)",
   "license": "MIT",

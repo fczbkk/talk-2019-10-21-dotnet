@@ -11,6 +11,7 @@
 
 <script>
   import QuantityEditor from './QuantityEditor'
+  import { EventBus } from './event-bus'
 
   export default {
     components: { QuantityEditor },
@@ -20,6 +21,14 @@
     data () {
       return {
         quantity: 0
+      }
+    },
+    watch: {
+      quantity (newValue) {
+        EventBus.$emit('change-quantity', {
+          id: this.product.id,
+          quantity: newValue
+        })
       }
     }
   }

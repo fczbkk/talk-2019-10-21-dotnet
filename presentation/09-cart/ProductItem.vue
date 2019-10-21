@@ -1,6 +1,6 @@
 <template>
   <div class="productItem">
-    <h3>{{ product.title }}</h3>
+    <header>{{ product.title }}</header>
     <div class="content">
       <div><img :src="'http://localhost:3000/images/' + product.image"></div>
       <div class="price">{{ product.price }},- Kč</div>
@@ -31,7 +31,7 @@
     border: 2px solid #3A6EA5;
   }
 
-  .productItem h3 {
+  .productItem header {
     background: #3A6EA5;
     color: #EBEBEB;
     margin: 0;
@@ -42,7 +42,7 @@
     height: 100px;
   }
 
-  .productItem h3, .productItem .content {
+  .productItem header, .productItem .content {
     padding: 1em;
   }
 

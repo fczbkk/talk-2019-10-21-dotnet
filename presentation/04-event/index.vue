@@ -1,8 +1,8 @@
 <template>
   <div>
-    <button @click="count--">-</button>
-    <input v-model="count" size="3" />
-    <button @click="count++">+</button>
+    <button @click="quantity--">-</button>
+    <input v-model="quantity" size="3" />
+    <button @click="quantity++">+</button>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
   export default {
     data () {
       return {
-        count: 10
+        quantity: 10
       }
     }
   }

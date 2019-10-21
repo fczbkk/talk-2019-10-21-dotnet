@@ -1,17 +1,18 @@
 <template>
   <div>
-    <quantity-editor v-model="quantity" />
-    <p>{{ quantity }}</p>
+    <product-item :product="product" />
   </div>
 </template>
 
 <script>
-  import QuantityEditor from './QuantityEditor'
+  import {products} from '../data'
+  import ProductItem from './ProductItem'
+
   export default {
-    components: { QuantityEditor },
+    components: { ProductItem },
     data () {
       return {
-        quantity: 5
+        product: products[0]
       }
     }
   }

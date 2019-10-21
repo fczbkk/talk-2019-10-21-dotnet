@@ -1,6 +1,6 @@
 <template>
   <div>
-    <quantity-editor :value="quantity" />
+    <quantity-editor v-model="quantity" />
     <p>{{ quantity }}</p>
   </div>
 </template>

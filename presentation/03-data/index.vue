@@ -2,15 +2,15 @@
   <div>
     <p>
       Template:<br>
-      {{ count }}
+      {{ quantity }}
     </p>
     <p>
       Bind:<br>
-      <input :value="count" />
+      <input :value="quantity" />
     </p>
     <p>
       Model:<br>
-      <input v-model="count" />
+      <input v-model="quantity" />
     </p>
   </div>
 </template>
@@ -19,7 +19,7 @@
   export default {
     data () {
       return {
-        count: 10
+        quantity: 10
       }
     }
   }
