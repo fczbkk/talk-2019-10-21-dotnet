@@ -27,6 +27,7 @@
 
 <style scoped>
   .productItem {
+    max-width: 300px;
     font-family: sans-serif;
     border: 2px solid #3A6EA5;
   }
